@@ -7,6 +7,7 @@ import Recurcive from './Component/Recursive_Navigatio/Recursive';
 import StarRating from './Component/star_rating/StarRating';
 import { menus } from './Component/Recursive_Navigatio/data';
 import Tabs_test from './Component/Custom_tabs/Tabs_test';
+import Todo from './Component/TodoApp/Todo';
 function App() {
   return (
     <div className="App">
@@ -15,7 +16,8 @@ function App() {
     {/* <StarRating/> */}
     {/* <Loadmore/> */}
     {/* <Recurcive menus={menus}/> */}
-    <Tabs_test/>
+    {/* <Tabs_test/> */}
+    <Todo/>
 
     </div>
   );
