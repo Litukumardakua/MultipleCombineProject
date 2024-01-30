@@ -6,6 +6,7 @@ import RandomColor from './Component/RandomColorCodeChange/RandomColor';
 import Recurcive from './Component/Recursive_Navigatio/Recursive';
 import StarRating from './Component/star_rating/StarRating';
 import { menus } from './Component/Recursive_Navigatio/data';
+import Tabs_test from './Component/Custom_tabs/Tabs_test';
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,8 @@ function App() {
     {/* <RandomColor/> */}
     {/* <StarRating/> */}
     {/* <Loadmore/> */}
-    <Recurcive menus={menus}/>
+    {/* <Recurcive menus={menus}/> */}
+    <Tabs_test/>
 
     </div>
   );
