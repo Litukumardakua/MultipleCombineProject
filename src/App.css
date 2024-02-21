@@ -67,3 +67,20 @@
 .right_view span{
   font-weight: 400;
 }
+
+/* TikTacTio */
+
+.Block{
+  width: 150px;
+  height: 150px;
+  border: 5px solid black;
+  background-size: cover;
+  display: inline-block;
+}
+
+.marks1{
+  background-image: url(./Component/TicTakTio/images/dot.png);
+}
+.marks2{
+  background-image: url(./Component/TicTakTio/images/cross.png);
+}
