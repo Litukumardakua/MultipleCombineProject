@@ -6,9 +6,13 @@ import Recurcive from "./Component/Recursive_Navigatio/Recursive";
 import StarRating from "./Component/star_rating/StarRating";
 import { menus } from "./Component/Recursive_Navigatio/data";
 import Tabs_test from "./Component/Custom_tabs/Tabs_test";
-import Todo from "./Component/TodoApp/Todo";
-import AddFilter from "./Component/AddFilter/AddFilter";
 import Board from "./Component/TicTakTio/Board";
+import Reacticon from "./Component/practicle/Reacticon";
+import ReactTostyfy from "./Component/practicle/ReactTostyfy";
+import ReactModal from "./Component/practicle/ReactModel";
+import ReactToolTip from "./Component/practicle/ReactToolTip";
+import ReactCountUp from "./Component/practicle/ReactCountUp";
+
 function App() {
   return (
     <div className="App">
@@ -19,8 +23,12 @@ function App() {
       {/* <Recurcive menus={menus}/> */}
       {/* <Tabs_test/> */}
       {/* <Todo/> */}
-      {/* <AddFilter /> */}
-      <Board/>
+      {/* <Board/> */}
+      {/* <Reacticon/> */}
+      {/* <ReactTostyfy/> */}
+      {/* <ReactModal/> */}
+      {/* <ReactToolTip/> */}
+      <ReactCountUp/>
     </div>
   );
 }
