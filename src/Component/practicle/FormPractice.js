@@ -36,7 +36,7 @@ const FormPractice = () => {
 
   return (
     <div>
-      <button onClick={() => setModelIsOpen(true)}>form model</button>
+      <button onClick={() => setModelIsOpen(true)}>Open Form</button>
       <Model isOpen={modelIsOpen} onRequestClose={() => setModelIsOpen(false)}>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
@@ -81,13 +81,26 @@ const FormPractice = () => {
       {submittedValues.length > 0 && (
         <div>
           <h2>Submitted values:</h2>
-          {submittedValues.map((value, index) => (
-            <div key={index}>
-              <p>UserName: {value.username}</p>
-              <p>Email: {value.email}</p>
-              <p>Password: {value.password}</p>
-            </div>
-          ))}
+          <div className="table-responsive">
+            <table className="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">UserName</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Password</th>
+                </tr>
+              </thead>
+              <tbody>
+                {submittedValues.map((value, index) => (
+                  <tr key={index}>
+                    <td>{value.username}</td>
+                    <td>{value.email}</td>
+                    <td>{value.password}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       )}
     </div>
