@@ -12,6 +12,10 @@ import ReactTostyfy from "./Component/practicle/ReactTostyfy";
 import ReactModal from "./Component/practicle/ReactModel";
 import ReactToolTip from "./Component/practicle/ReactToolTip";
 import ReactCountUp from "./Component/practicle/ReactCountUp";
+import FormPractice from "./Component/practicle/FormPractice";
+import Colorpackge from "./Component/practicle/Colorpackge";
+import { CreditCard } from "@mui/icons-material";
+import Datepicker from "./Component/practicle/Datepicker";
 
 function App() {
   return (
@@ -28,7 +32,11 @@ function App() {
       {/* <ReactTostyfy/> */}
       {/* <ReactModal/> */}
       {/* <ReactToolTip/> */}
-      <ReactCountUp/>
+      {/* <ReactCountUp/> */}
+      {/* <FormPractice/> */}
+      {/* <Colorpackge/> */}
+      {/* <CreditCard/> */}
+      <Datepicker/>
     </div>
   );
 }
