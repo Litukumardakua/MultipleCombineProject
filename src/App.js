@@ -33,10 +33,10 @@ function App() {
       {/* <ReactModal/> */}
       {/* <ReactToolTip/> */}
       {/* <ReactCountUp/> */}
-      {/* <FormPractice/> */}
+      <FormPractice/>
       {/* <Colorpackge/> */}
       {/* <CreditCard/> */}
-      <Datepicker/>
+      {/* <Datepicker/> */}
     </div>
   );
 }
