@@ -16,6 +16,9 @@ import FormPractice from "./Component/practicle/FormPractice";
 import Colorpackge from "./Component/practicle/Colorpackge";
 import { CreditCard } from "@mui/icons-material";
 import Datepicker from "./Component/practicle/Datepicker";
+import Demofilter from "./Component/AddFilter/Demofilterd";
+import MovieList from "./Component/AddFilter/MovieFilter/MovieList";
+import {movies} from './Component/AddFilter/data/Movies.json'
 
 function App() {
   return (
@@ -33,10 +36,12 @@ function App() {
       {/* <ReactModal/> */}
       {/* <ReactToolTip/> */}
       {/* <ReactCountUp/> */}
-      <FormPractice/>
+      {/* <FormPractice/> */}
       {/* <Colorpackge/> */}
       {/* <CreditCard/> */}
       {/* <Datepicker/> */}
+      {/* <Demofilter/> */}
+      <MovieList movies={movies}/>
     </div>
   );
 }
