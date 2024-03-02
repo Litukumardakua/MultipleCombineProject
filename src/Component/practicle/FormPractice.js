@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Model from "react-modal";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const FormPractice = () => {
   const [modelIsOpen, setModelIsOpen] = useState(false);
@@ -22,16 +24,28 @@ const FormPractice = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newSubmittedValue = { ...inputValue };
-    setSubmittedValues((prevSubmittedValues) => [
-      ...prevSubmittedValues,
-      newSubmittedValue
-    ]);
-    setInputValue({
-      username:"",
-      email:"",
-      password:""
-    });
-    setModelIsOpen(false);
+
+         const { username, email,password } = inputValue;
+     if (username == "") {
+       toast.error("username is require")
+     } else if (email == "") {
+       toast.error("email is require")
+     } else if (!email.includes("@")) {
+       toast.error("invalid email")
+     } else if (password == "") {
+       toast.error("password is require")
+     } else {
+      setSubmittedValues((prevSubmittedValues) => [
+        ...prevSubmittedValues,
+        newSubmittedValue
+      ]);
+      setInputValue({
+        username:"",
+        email:"",
+        password:""
+      });
+      setModelIsOpen(false);
+     }
   };
 
   return (
